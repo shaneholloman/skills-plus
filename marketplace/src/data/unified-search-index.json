@@ -1,7 +1,7 @@
 {
   "meta": {
     "version": "1.0.0",
-    "generated": "2026-01-18T07:12:19.516Z",
+    "generated": "2026-01-20T14:20:12.700Z",
     "generator": "scripts/generate-unified-search.mjs"
   },
   "stats": {
@@ -7157,7 +7157,7 @@
       "id": "automating-database-backups",
       "slug": "automating-database-backups",
       "name": "automating-database-backups",
-      "description": "Process use when you need to automate database backup processes with scheduling and encryption. This skill creates backup scripts for PostgreSQL, MySQL, MongoDB, and SQLite with compression. Trigger with phrases like \"automate database backups\", \"schedule database dumps\", \"create backup scripts\", or \"implement disaster recovery for database\". allowed-tools: Read, Write, Edit, Grep, Glob, Bash(pg_dump:*), Bash(mysqldump:*), Bash(mongodump:*), Bash(cron:*) version: 1.0.0 author: Jeremy Longshore <jeremy@intentsolutions.io> license: MIT",
+      "description": "Automate database backup processes with scheduling, compression, and encryption. Supports PostgreSQL (pg_dump), MySQL (mysqldump), MongoDB (mongodump), and SQLite. Generates production-ready backup scripts with retention policies and restore procedures. Trigger: \"automate database backups\", \"schedule backups\", \"create backup script\", \"disaster recovery\". allowed-tools: Read, Write, Edit, Grep, Glob, Bash(pg_dump:*), Bash(mysqldump:*), Bash(mongodump:*), Bash(cron:*), Bash(gpg:*) version: 2.0.0 author: Jeremy Longshore <jeremy@intentsolutions.io> license: MIT",
       "category": "database",
       "allowedTools": [],
       "version": "1.0.0",
@@ -7165,7 +7165,7 @@
         "name": "database-backup-automator",
         "category": "database"
       },
-      "searchText": "automating-database-backups process use when you need to automate database backup processes with scheduling and encryption. this skill creates backup scripts for postgresql, mysql, mongodb, and sqlite with compression. trigger with phrases like \"automate database backups\", \"schedule database dumps\", \"create backup scripts\", or \"implement disaster recovery for database\". allowed-tools: read, write, edit, grep, glob, bash(pg_dump:*), bash(mysqldump:*), bash(mongodump:*), bash(cron:*) version: 1.0.0 author: jeremy longshore <jeremy@intentsolutions.io> license: mit database "
+      "searchText": "automating-database-backups automate database backup processes with scheduling, compression, and encryption. supports postgresql (pg_dump), mysql (mysqldump), mongodb (mongodump), and sqlite. generates production-ready backup scripts with retention policies and restore procedures. trigger: \"automate database backups\", \"schedule backups\", \"create backup script\", \"disaster recovery\". allowed-tools: read, write, edit, grep, glob, bash(pg_dump:*), bash(mysqldump:*), bash(mongodump:*), bash(cron:*), bash(gpg:*) version: 2.0.0 author: jeremy longshore <jeremy@intentsolutions.io> license: mit database "
     },
     {
       "type": "skill",
@@ -8019,7 +8019,7 @@
       "id": "creating-kubernetes-deployments",
       "slug": "creating-kubernetes-deployments",
       "name": "creating-kubernetes-deployments",
-      "description": "Deploy use when generating Kubernetes deployment manifests and services. Trigger with phrases like \"create kubernetes deployment\", \"generate k8s manifest\", \"deploy app to kubernetes\", or \"create service and ingress\". Produces production-ready YAML with health checks, auto-scaling, resource limits, ingress configuration, and TLS termination. allowed-tools: Read, Write, Edit, Grep, Glob, Bash(kubectl:*) version: 1.0.0 author: Jeremy Longshore <jeremy@intentsolutions.io> license: MIT",
+      "description": "Deploy applications to Kubernetes with production-ready manifests. Supports Deployments, Services, Ingress, HPA, ConfigMaps, Secrets, StatefulSets, and NetworkPolicies. Includes health checks, resource limits, auto-scaling, and TLS termination. allowed-tools: Read, Write, Edit, Grep, Glob, Bash(kubectl:*) version: 2.0.0 author: Jeremy Longshore <jeremy@intentsolutions.io> license: MIT",
       "category": "devops",
       "allowedTools": [],
       "version": "1.0.0",
@@ -8027,7 +8027,7 @@
         "name": "kubernetes-deployment-creator",
         "category": "devops"
       },
-      "searchText": "creating-kubernetes-deployments deploy use when generating kubernetes deployment manifests and services. trigger with phrases like \"create kubernetes deployment\", \"generate k8s manifest\", \"deploy app to kubernetes\", or \"create service and ingress\". produces production-ready yaml with health checks, auto-scaling, resource limits, ingress configuration, and tls termination. allowed-tools: read, write, edit, grep, glob, bash(kubectl:*) version: 1.0.0 author: jeremy longshore <jeremy@intentsolutions.io> license: mit devops "
+      "searchText": "creating-kubernetes-deployments deploy applications to kubernetes with production-ready manifests. supports deployments, services, ingress, hpa, configmaps, secrets, statefulsets, and networkpolicies. includes health checks, resource limits, auto-scaling, and tls termination. allowed-tools: read, write, edit, grep, glob, bash(kubectl:*) version: 2.0.0 author: jeremy longshore <jeremy@intentsolutions.io> license: mit devops "
     },
     {
       "type": "skill",
@@ -9824,7 +9824,7 @@
       "id": "generating-stored-procedures",
       "slug": "generating-stored-procedures",
       "name": "generating-stored-procedures",
-      "description": "Execute use when you need to work with stored procedure generation. This skill provides stored procedure code generation with comprehensive guidance and automation. Trigger with phrases like \"generate stored procedures\", \"create database functions\", or \"write SQL procedures\". allowed-tools: Read, Write, Edit, Grep, Glob, Bash(cmd:*) version: 1.0.0 author: Jeremy Longshore <jeremy@intentsolutions.io> license: MIT",
+      "description": "Use when you need to generate, validate, or deploy stored procedures for PostgreSQL, MySQL, or SQL Server. Creates database functions, triggers, and procedures with proper error handling and transaction management. Trigger with phrases like \"generate stored procedure\", \"create database function\", \"write SQL procedure\", \"add trigger to table\", or \"create CRUD procedures\". allowed-tools: Read, Write, Edit, Grep, Glob, Bash(cmd:psql,cmd:mysql,cmd:sqlcmd,cmd:python3) version: 2.0.0 author: Jeremy Longshore <jeremy@intentsolutions.io> license: MIT",
       "category": "database",
       "allowedTools": [],
       "version": "1.0.0",
@@ -9832,7 +9832,7 @@
         "name": "stored-procedure-generator",
         "category": "database"
       },
-      "searchText": "generating-stored-procedures execute use when you need to work with stored procedure generation. this skill provides stored procedure code generation with comprehensive guidance and automation. trigger with phrases like \"generate stored procedures\", \"create database functions\", or \"write sql procedures\". allowed-tools: read, write, edit, grep, glob, bash(cmd:*) version: 1.0.0 author: jeremy longshore <jeremy@intentsolutions.io> license: mit database "
+      "searchText": "generating-stored-procedures use when you need to generate, validate, or deploy stored procedures for postgresql, mysql, or sql server. creates database functions, triggers, and procedures with proper error handling and transaction management. trigger with phrases like \"generate stored procedure\", \"create database function\", \"write sql procedure\", \"add trigger to table\", or \"create crud procedures\". allowed-tools: read, write, edit, grep, glob, bash(cmd:psql,cmd:mysql,cmd:sqlcmd,cmd:python3) version: 2.0.0 author: jeremy longshore <jeremy@intentsolutions.io> license: mit database "
     },
     {
       "type": "skill",
