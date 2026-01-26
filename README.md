@@ -1,6 +1,6 @@
 # Claude Code Skills & Plugins Hub
 
-[![Version](https://img.shields.io/badge/version-4.12.0-brightgreen)](000-docs/247-OD-CHNG-changelog.md)
+[![Version](https://img.shields.io/badge/version-4.13.0-brightgreen)](000-docs/247-OD-CHNG-changelog.md)
 [![CLI](https://img.shields.io/badge/CLI-ccpi-blueviolet?logo=npm)](https://www.npmjs.com/package/@intentsolutionsio/ccpi)
 [![Agent Skills](https://img.shields.io/badge/Agent%20Skills-739%20Skills-orange?logo=sparkles)](000-docs/247-OD-CHNG-changelog.md)
 [![Plugins](https://img.shields.io/badge/Total%20Plugins-270-blue)](https://github.com/jeremylongshore/claude-code-plugins-plus-skills)
@@ -57,9 +57,9 @@
 
 **Claude Code plugins with embedded agent skills and interactive tutorials**
 
-**v4.12.0:** Quality improvements + 5 crypto trading plugins + validator content checks.
+**v4.13.0:** 12 complete SaaS skill packs (288 skills) + brand strategy plugin + 2026 schema updates.
 
-**Latest:** [v4.12.0 Release](https://github.com/jeremylongshore/claude-code-plugins/releases/tag/v4.12.0)
+**Latest:** [v4.13.0 Release](https://github.com/jeremylongshore/claude-code-plugins/releases/tag/v4.13.0)
 
 ```bash
 /plugin marketplace add jeremylongshore/claude-code-plugins

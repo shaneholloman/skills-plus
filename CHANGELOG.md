@@ -5,6 +5,55 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [4.13.0] - 2026-01-26
+
+### Added
+- 12 complete SaaS skill packs with real, production-ready content (288 skills total):
+  - **databricks-pack**: Delta Lake, MLflow, notebooks, clusters, data engineering workflows
+  - **mistral-pack**: Mistral AI inference, embeddings, fine-tuning, production deployment
+  - **langfuse-pack**: LLM observability, tracing, prompt management, evaluation metrics
+  - **obsidian-pack**: Vault management, plugins, sync, templates, personal knowledge management
+  - **documenso-pack**: Document signing, templates, e-signature workflows, compliance
+  - **evernote-pack**: Note management, notebooks, tags, search, productivity workflows
+  - **guidewire-pack**: InsuranceSuite, PolicyCenter, ClaimCenter, insurance platform integration
+  - **lokalise-pack**: Translation management system, localization, i18n automation
+  - **maintainx-pack**: Work orders, preventive maintenance, CMMS workflows, asset tracking
+  - **openevidence-pack**: Medical AI, clinical decision support, healthcare evidence platform
+  - **speak-pack**: AI language learning, speech recognition, pronunciation training, education tech
+  - **twinmind-pack**: AI meeting assistant, transcription, summaries, productivity automation
+- Each pack follows standard template: S01-S12 (Standard), P13-P18 (Pro), F19-F24 (Flagship)
+- All skills include 2026 schema frontmatter with proper tool permissions
+- Brand strategy framework plugin integration (#292)
+
+### Changed
+- Updated all 2025 schema/spec references to 2026 across documentation
+- Improved contributor ordering convention (newest first)
+- Marketplace catalog extended with 12 new SaaS packs
+
+### Metrics
+- New SaaS skill packs: 12 (288 skills)
+- Total skills: 1,027 (previously 739)
+- Commits since v4.12.0: 15
+- Contributors: Jeremy Longshore (10), Rowan Brooks (4)
+- Files changed: 301
+- Days since last release: 14
+
+## [4.12.0] - 2026-01-12
+
+### Added
+- 5 crypto trading plugins to public repository
+- Validator content quality validation checks (#299)
+
+### Fixed
+- creating-kubernetes-deployments skill quality (#298)
+- automating-database-backups skill quality (#297)
+- generating-stored-procedures skill quality (#296)
+- All 3 skills improved based on Richard Hightower's quality feedback
+
+### Changed
+- Added Richard Hightower as contributor
+- Banner text and mobile spacing improvements
+
 ## [4.11.0] - 2026-01-18
 
 ### Added
