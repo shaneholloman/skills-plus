@@ -730,32 +730,32 @@ const pageDescription = `Search all ${searchIndex.stats.totalPlugins} plugins an
         return;
       }
 
-      grid.innerHTML = items.map(item => {
-        const href = item.type === 'plugin' ? `/plugins/${item.name}/` : `/skills/${item.slug}/`;
-        const displayName = item.type === 'plugin' && item.displayName ? item.displayName : item.name;
-        const parentPlugin = item.type === 'skill' && item.parentPlugin
-          ? `<div class="parent-plugin"><span>📦</span><span>Provided by ${item.parentPlugin.name}</span></div>`
-          : '';
-        const tools = item.type === 'skill' && item.allowedTools && item.allowedTools.length > 0
-          ? `<div class="result-tools">
-              ${item.allowedTools.slice(0, 4).map(tool => `<span class="tool-tag">${tool}</span>`).join('')}
-              ${item.allowedTools.length > 4 ? `<span class="tool-tag">+${item.allowedTools.length - 4} more</span>` : ''}
-             </div>`
-          : '';
+      // Instead of replacing innerHTML, show/hide existing cards
+      const allCards = document.querySelectorAll('.result-card[data-item-id]');
+      const visibleIds = new Set(items.map(item => item.id || item.name));
 
-        return `
-          <a href="${href}" class="result-card">
-            <span class="result-type-badge ${item.type}">${item.type}</span>
-            <h3 class="result-name">${displayName}</h3>
-            <p class="result-description">${item.description}</p>
-            <div class="result-meta">
-              ${parentPlugin}
-              <div class="result-category">${item.category.replace(/-/g, ' ')}</div>
-            </div>
-            ${tools}
-          </a>
-        `;
-      }).join('');
+      allCards.forEach(card => {
+        const itemId = card.dataset.itemId;
+        if (visibleIds.has(itemId)) {
+          card.style.display = '';
+        } else {
+          card.style.display = 'none';
+        }
+      });
+
+      // Reorder visible cards to match search result order
+      const visibleCards = Array.from(allCards).filter(card => visibleIds.has(card.dataset.itemId));
+      const cardOrder = new Map(items.map((item, index) => [item.id || item.name, index]));
+      visibleCards.sort((a, b) => {
+        const orderA = cardOrder.get(a.dataset.itemId) ?? 999999;
+        const orderB = cardOrder.get(b.dataset.itemId) ?? 999999;
+        return orderA - orderB;
+      });
+
+      // Move cards to correct order
+      visibleCards.forEach(card => {
+        grid.appendChild(card);
+      });
     }
 
     function updateResultsInfo(count) {
