@@ -5,6 +5,36 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [4.15.0] - 2026-02-13
+
+### Added
+- Products & Services section on homepage with Agent37 partner integration
+- Penetration testing plugin v2.0.0 with 3 real Python security scanners (~4,500 lines):
+  - `security_scanner.py` - HTTP headers, SSL/TLS, endpoint probing, CORS analysis
+  - `dependency_auditor.py` - npm audit & pip-audit wrapper with unified reporting
+  - `code_security_scanner.py` - bandit + 16 regex patterns for static analysis
+- Security reference documentation: OWASP Top 10, Security Headers, Remediation Playbook
+
+### Fixed
+- Windows Defender false positive in penetration-tester plugin (#300) - removed literal PHP payloads
+- Sponsor page pricing tiers replaced with email-for-details contact form
+- stored-procedure-generator test functions renamed to avoid pytest collection conflicts
+- Homepage product listing prices updated to $10
+- Explore page style preservation when filtering search results
+
+### Changed
+- Copyrights updated to 2026 across all documentation
+- Opus model ID now allowed in skills schema validation
+- Schema references synced to 2026 spec
+
+### Metrics
+- Commits since v4.14.0: 8
+- Files changed: 50+
+- New Python code: ~4,500 lines (security scanners)
+- New reference docs: 3 (~1,100 lines)
+
+---
+
 ## [4.14.0] - 2026-01-31
 
 ### Added
