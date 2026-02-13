@@ -1,6 +1,6 @@
 # Claude Code Skills & Plugins Hub
 
-[![Version](https://img.shields.io/badge/version-4.14.0-brightgreen)](000-docs/247-OD-CHNG-changelog.md)
+[![Version](https://img.shields.io/badge/version-4.15.0-brightgreen)](000-docs/247-OD-CHNG-changelog.md)
 [![CLI](https://img.shields.io/badge/CLI-ccpi-blueviolet?logo=npm)](https://www.npmjs.com/package/@intentsolutionsio/ccpi)
 [![Agent Skills](https://img.shields.io/badge/Agent%20Skills-1537%20Skills-orange?logo=sparkles)](000-docs/247-OD-CHNG-changelog.md)
 [![Plugins](https://img.shields.io/badge/Total%20Plugins-270-blue)](https://github.com/jeremylongshore/claude-code-plugins-plus-skills)
@@ -57,9 +57,9 @@
 
 **Claude Code plugins with embedded agent skills and interactive tutorials**
 
-**v4.14.0:** 42 SaaS skill packs (1,086 skills) + brand strategy plugin + 2026 schema updates.
+**v4.15.0:** Penetration tester v2.0.0 with real security scanners + homepage improvements + bug fixes.
 
-**Latest:** [v4.14.0 Release](https://github.com/jeremylongshore/claude-code-plugins/releases/tag/v4.14.0)
+**Latest:** [v4.15.0 Release](https://github.com/jeremylongshore/claude-code-plugins-plus-skills/releases/tag/v4.15.0)
 
 ```bash
 /plugin marketplace add jeremylongshore/claude-code-plugins
@@ -699,4 +699,4 @@ Made with dedication by the Claude Code community
 
 ---
 
-**Status**: Public Beta | **Version**: 4.14.0 | **Last Updated**: January 2026 | **Skills**: 1,537
+**Status**: Public Beta | **Version**: 4.15.0 | **Last Updated**: February 2026 | **Skills**: 1,537
